@@ -1,11 +1,12 @@
-Part A. Session -- Path mapping
+## Part A. Session -- Path mapping
 
-S1: double_direction
-S2: lane_change
-S3: single_direction
-S4: t_junction
+S1: double_direction,
+S2: lane_change,
+S3: single_direction,
+S4: t_junction,
 
-Part B. A introduction to the files.
+## Part B. A introduction to the files.
+
 ### 1. Specification
     * law_specification.txt: the formal specification of the 13 testable articles in Chinese traffic laws.
     * violation_formulae.json: all the violation formulae transformed from law_specification.txt.
@@ -23,11 +24,12 @@ Part B. A introduction to the files.
 	* testing_engines/gflownet/generator/pre_process: encoding scenarios and decoding action sequences.
 	* testing_engines/gflownet/GFN_Fuzzing.py: the entry of our testing algorithm.
 	* testing_engines/gflownet/generator: our scenario generator based on customized gflownet.
+	* testing_engines/gflownet/GFN_Fuzzing_Validate.py: the script of replaying the didcovered violation scenarios in Experiment_Data.
 
 ### 4. Experiment_Data
 
 	* RQ1: the data in Research question 1, including the discovered violations and difficulty degree.
-		* For example, file sub_law_violation_2.json consists of the scenario violating No.2 formula and the trace data.
+		* For example, file sub_law_violation_2.json consists of the scenario violating No.2 formula and the corresponding trace data.
 	* RQ2: the relation between the number of discovered violations and the number of runs.
 	* RQ3: the discovered violations by the two alternative methods, i.e., active+max and inactive+new.
 
