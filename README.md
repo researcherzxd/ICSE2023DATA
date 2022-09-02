@@ -5,7 +5,7 @@ S2: lane_change,
 S3: single_direction,
 S4: t_junction,
 
-## Part B. A introduction to the files.
+## Part B. An introduction to the files.
 
 ### 1. Specification
     * law_specification.txt: the formal specification of the 13 testable articles in Chinese traffic laws.
@@ -27,7 +27,6 @@ S4: t_junction,
 	* testing_engines/gflownet/GFN_Fuzzing_Validate.py: the script of replaying the didcovered violation scenarios in Experiment_Data.
 
 ### 4. Experiment_Data
-
 	* RQ1: the data in Research question 1, including the discovered violations and difficulty degree.
 		* For example, file sub_law_violation_2.json consists of the scenario violating No.2 formula and the corresponding trace data.
 	* RQ2: the relation between the number of discovered violations and the number of runs.
